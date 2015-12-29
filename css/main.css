@@ -33,7 +33,6 @@
 
 body {
 	background-color: black;
-    overflow:hidden;
 }
 .fadein{
 	animation-delay: 1.3s;
@@ -41,7 +40,7 @@ body {
 }
 .image_animation:hover .shading { 
 	opacity: 1;
-	transition: opacity 2s;
+	transition: opacity 4s;
 }
 .image_animation:hover .introText2{ 
 	opacity: 1;
@@ -82,29 +81,15 @@ body {
   animation: intro 4s;
 }
 
-.txtcss3
-{
-  -webkit-animation-delay: 1.3s;-webkit-animation-duration: 3s;-webkit-animation-iteration-count: 1;-webkit-animation-fill-mode: both;-webkit-animation-name: txtcss3;
-  -moz-animation-delay: 1.3s;-moz-animation-duration: 3s;-moz-animation-iteration-count: 1;-moz-animation-fill-mode: both;-moz-animation-name: txtcss3;
-  -ms-animation-delay: 1.3s;-ms-animation-duration: 3s;-ms-animation-iteration-count: 1;-ms-animation-fill-mode: both;-ms-animation-name: txtcss3;
-  animation-delay: 1.3s;animation-duration: 3s;animation-iteration-count: 1;animation-fill-mode: both;animation-name: txtcss3;
-}
 .txtcss2
 {
   
-  -webkit-animation-delay: 1.3s;-webkit-animation-duration: 3s;-webkit-animation-iteration-count: 1;-webkit-animation-fill-mode: both;-webkit-animation-name: navibar_intro;
-  -moz-animation-delay: 1.3s;-moz-animation-duration: 3s;-moz-animation-iteration-count: 1;-moz-animation-fill-mode: both;-moz-animation-name: navibar_intro;
-  -ms-animation-delay: 1.3s;-ms-animation-duration: 3s;-ms-animation-iteration-count: 1;-ms-animation-fill-mode: both;-ms-animation-name: navibar_intro;
-  animation-delay: 1.3s;animation-duration: 3s;animation-iteration-count: 1;animation-fill-mode: both;animation-name: navibar_intro;
+  -webkit-animation-delay: 0.5s;-webkit-animation-duration: 3s;-webkit-animation-iteration-count: 1;-webkit-animation-fill-mode: both;-webkit-animation-name: navibar_intro;
+  -moz-animation-delay: 0.5s;-moz-animation-duration: 3s;-moz-animation-iteration-count: 1;-moz-animation-fill-mode: both;-moz-animation-name: navibar_intro;
+  -ms-animation-delay: 0.5s;-ms-animation-duration: 3s;-ms-animation-iteration-count: 1;-ms-animation-fill-mode: both;-ms-animation-name: navibar_intro;
+  animation-delay: 0.5s;animation-duration: 3s;animation-iteration-count: 1;animation-fill-mode: both;animation-name: navibar_intro;
 }
-.txtcss
-{
-  
-  -webkit-animation-delay: 1.3s;-webkit-animation-duration: 2.5s;-webkit-animation-iteration-count: 1;-webkit-animation-fill-mode: both;-webkit-animation-name: txtcss;
-  -moz-animation-delay: 1.3s;-moz-animation-duration: 2.5s;-moz-animation-iteration-count: 1;-moz-animation-fill-mode: both;-moz-animation-name: txtcss;
-  -ms-animation-delay: 1.3s;-ms-animation-duration: 2.5s;-ms-animation-iteration-count: 1;-ms-animation-fill-mode: both;-ms-animation-name: txtcss;
-  animation-delay: 1.3s;animation-duration: 2.5s;animation-iteration-count: 1;animation-fill-mode: both;animation-name: txtcss;
-}
+
 .arrow-down {
 	width: 0; 
 	height: 0; 
@@ -138,8 +123,8 @@ body {
 }
 .animation{
    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */ 
-    animation: mymove 5s infinite;
-     -webkit-animation-duration: 4.8s;
+   animation: mymove 5s infinite;
+    -webkit-animation-duration: 4.8s;
 }
 
 
@@ -156,6 +141,7 @@ body {
 .navibar_item:hover .navibar_text{
 	opacity: 1;
 	transition: opacity 2s;
+
 }
 .navibar_item:hover .navibar_icon{
 	top: 30px;
@@ -168,7 +154,7 @@ body {
 }
 .navibar_text{
 	bottom: 0;
-	color: grey;
+	color:blue;
 	opacity: 0;
 	-webkit-transition: opacity 2s;
 	transition: opacity 2s;	
@@ -181,10 +167,14 @@ body {
 	left:0;
 	right:0;
 	margin:auto;
-	width:50px;
-	height:50px;
+	width:90px;
+	height:90px;
 	transition: top 1s;	
 
+}
+.center_div{
+	margin-left:auto;
+    margin-right: auto;
 }
 .center{
 	top:50%;
@@ -199,19 +189,25 @@ body {
 	position: relative;
 	display: inline-block;
 	padding-right: 10px;
+	margin-right: 10px;
+
 	width: 150px;
-	height: 120px;
+	height: 150px;
+
+	border: 5px solid blue;
 	background-color: white;
 	opacity: 0.3;
 	text-align: center;
+	border-radius:10px;
 	-webkit-transition: opacity  2s;
 	transition: opacity 2s;
 }
 .navibar{
-	width: 100%;
+  width: 100%;
   position:fixed;
   bottom: 10;
   z-index: 999;  
+  background-color:rgba(1, 1, 1, 0.4);
   text-align: center;
 };
 .photo{
